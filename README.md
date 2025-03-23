@@ -1,51 +1,53 @@
-# PROJETO CALCULADORA - FASE 1 - A
+# CALCULATOR PROJECT - PHASE 1 - A
 
-Este é um programa desenvolvido em Python para solucionar expressões aritméticas em notação RPN. O programa realia a leitura das expressões em um arquivo txt e realiza o calculo das expressões. As expressões realiza adição, subtração, mutiplicação, divisão real, divisão de inteiros, resto da divisão de inteiros, potenciação e três comandos especiais sendo eles: (N RES), (V MEM) e (MEM).
+This is a Python program developed to solve arithmetic expressions in Reverse Polish Notation (RPN). The program reads expressions from a .txt file and performs the calculations. The expressions involve addition, subtraction, multiplication, real division, integer division, integer division remainder, exponentiation, and three special commands: (N RES), (V MEM), and (MEM).
 
-## Operações em notação RPN
-  ->  A e B representam números reais
+## Operations in RPN Notation
+  -> A and B represent real numbers
 
-  a) Adição:+, no formato (A B +);
-  b) Subtração: - no formato (A B -) ;
-  c) Multiplicação: * no formato (A B *);
-  d) Divisão Real: | no formato (A B |);
-  e) Divisão de inteiros: / no formato (A B /);
-  f) Resto da Divisão de Inteiros: % no formato (A B %);
-  g) Potenciação: ^ no formato (A B ^);
+  a) Addition: +, in the format (A B +);
+  b) Subtraction: -, in the format (A B -);
+  c) Multiplication: *, in the format (A B *);
+  d) Real Division: |, in the format (A B |);
+  e) Integer Division: /, in the format (A B /);
+  f) Integer Division Remainder: %, in the format (A B %);
+  g) Exponentiation: ^, in the format (A B ^);
 
-### Comandos Especiais
-  a) (N RES): devolve o resultado da expressão que está N linhas antes, onde N é um número inteiro não negativo; 
-  b) (V MEM): armazena um valor, V, em um espaço de memória chamado de MEM, capaz de armazenar um valor real; 
-  c) (MEM): devolve o valor armazenado na memória. Se a memória não tiver sido usada anteriormente devolve o número real zero. Cada arquivo de textos é um escopo de aplicação.
+### Special Commands
+  a) (N RES): returns the result of the expression that is N lines before, where N is a non-negative integer;
+  b) (V MEM): stores a value, V, in a memory space called MEM, which can store a real value;
+  c) (MEM): returns the value stored in memory. If the memory has not been used before, it returns the real number zero. Each text file is an application scope.
 
-### Observações adicionais de requisitos
-  Use o ponto para indicar a vírgula decimal.
-  O expoente da operação de potenciação será sempre um inteiro positivo.
-  As expressões indicadas podem ser aninhadas para a criação de expressões compostas.
-  O programa deverá ser executado recebendo como argumento, na linha de comando, o nome do arquivo de teste.
+### Additional Requirements and Observations
+  - Use a period to indicate the decimal point.
+  - The exponent in the exponentiation operation will always be a positive integer.
+  - The expressions may be nested to create compound expressions.
+  - The program should be executed by passing the name of the test file as an argument in the command line.
 
-## Executando o Programa
-  A execução do programa pode ser feita da seguinte forma:
+## Running the Program
+  The program can be run as follows:
 
   --- Replit Shell
-    python main.py nomeArquivoTeste
+    python main.py testFileName
 
-  É necessário substituir 'nomeArquivoTeste' pelo nome do arquivo que deseja solucionar.
+  You need to replace 'testFileName' with the name of the file you want to solve.
 
-## Exemplo de execução
-### Arquivo txt
-  Nome arquivo txt: 'calculos'
-  Conteúdo do arquivo txt: (2 2 +)
-                           (3 (1 2 *) *)
-                           (16 (2 2 ^) /)
-                           ((9 5 *) 10 +)
-                           ((3 2 ^) (2 2 ^) *)
-### Execução do programa
+## Example of Execution
+### Text File
+  Text file name: 'calculations'
+  Content of the text file:
+  (2 2 +)
+  (3 (1 2 *) *)
+  (16 (2 2 ^) /)
+  ((9 5 *) 10 +)
+  ((3 2 ^) (2 2 ^) *)
+
+### Running the Program
   --- Replit Shell
-  python main.py 'calculos'
+  python main.py 'calculations'
 
-### Resultado da execuçã do programa
-  Os resultados das expressões contidas no arquivo 'calculos.txt' serão apresentadas no formato '-> expressão = X', onde 'expressão' é o cálculo realizado e 'X' o resultado do cálculo.
+### Program Execution Result
+  The results of the expressions in the 'calculations.txt' file will be presented in the format '-> expression = X', where 'expression' is the calculation performed, and 'X' is the result of the calculation.
 
   --- Replit
   -> (2 2 +) = 4.0
